@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohammad Hossam El Dein — Art Director, Experiential &amp; Event Design</title>
+<meta name="description" content="Portfolio of Mohammad Hossam El Dein, art director for exhibition booths, national events and branded environments across Egypt and the GCC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#FF4F00;
+  --bg:#F2F0EB;--fg:#0E0E0E;--muted:#5E5C58;--line:rgba(14,14,14,.16);--panel:#E7E4DD;
+  --inv:#0E0E0E;--invfg:#F2F0EB;--invline:rgba(242,240,235,.25);
+  --gutter:clamp(16px,4vw,56px);
+  --sans:'Space Grotesk','Inter','Helvetica Neue',Arial,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+}
+:root[data-theme="dark"]{
+  --bg:#0E0E0E;--fg:#F2F0EB;--muted:#A3A09A;--line:rgba(242,240,235,.18);--panel:#1A1A19;
+  --inv:#F2F0EB;--invfg:#0E0E0E;--invline:rgba(14,14,14,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;transition:background .25s ease,color .25s ease}
+a{color:inherit}a:hover{opacity:.7}
+button{font:inherit;cursor:pointer;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1440px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.muted{color:var(--muted)}
+.display{font-family:var(--sans);font-weight:700;letter-spacing:-.045em}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;margin:0}
+
+/* nav */
+header.top{border-bottom:1px solid var(--line)}
+nav.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#0E0E0E;font-family:var(--sans);font-weight:700;font-size:16px;letter-spacing:-.02em}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:4px}
+.links a{text-decoration:none;padding:12px 14px}
+.theme{margin-left:8px;min-height:44px;padding:0 16px;border:1px solid var(--fg);background:transparent;display:flex;align-items:center;gap:8px}
+.theme i{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--fg);background:transparent}
+:root[data-theme="dark"] .theme i{background:var(--fg)}
+
+/* hero */
+.hero{padding-top:clamp(40px,7vw,96px);padding-bottom:clamp(40px,6vw,80px)}
+.hero-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.hwf-stage{position:relative;margin-top:clamp(20px,3vw,40px);height:620px;overflow:hidden;border-bottom:1px solid var(--fg);cursor:crosshair;touch-action:pan-y}
+@media (max-width:900px){.hwf-stage{height:460px}}
+@media (max-width:560px){.hwf-stage{height:340px}}
+.hwf-stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hwf-hint{position:absolute;right:0;top:4px;font-size:11px;letter-spacing:.1em;pointer-events:none}
+.hero-row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px;margin-top:clamp(28px,4vw,48px)}
+.lede{margin:0;max-width:560px;font-size:clamp(18px,1.6vw,22px);line-height:1.45}
+.arabic{margin:0;font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:700;font-size:clamp(28px,3vw,44px);line-height:1.2}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.btn{min-height:52px;display:inline-flex;align-items:center;gap:10px;padding:0 26px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--fg)}
+.btn.solid{background:var(--fg);color:var(--bg)}
+.dim{margin-top:clamp(48px,7vw,96px);display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.dim .tickv{width:1px;height:14px;background:var(--muted)}
+.dim .rule{flex:1 1 auto;height:1px;background:var(--muted)}
+
+/* facts */
+.facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.fact{padding:32px 24px;border-right:1px solid var(--line)}
+.fact:first-child{padding-left:0}.fact:last-child{border-right:0}
+.fact b{display:block;font-family:var(--sans);font-weight:700;font-size:56px;line-height:1;letter-spacing:-.04em}
+.fact span{display:block;margin-top:10px}
+
+/* ticker */
+.ticker{overflow:hidden;padding:22px 0;border-bottom:1px solid var(--line)}
+.tick{display:flex;gap:56px;width:max-content;animation:tick 48s linear infinite}
+.tick span{display:inline-flex;align-items:center;gap:56px;font-family:var(--sans);font-weight:500;font-size:28px;letter-spacing:-.02em;white-space:nowrap}
+.tick span::after{content:"";width:10px;height:10px;background:var(--accent)}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.tick{animation:none}}
+
+/* sections */
+.section{padding-top:clamp(56px,8vw,120px);padding-bottom:clamp(56px,8vw,120px)}
+.h2{margin:12px 0 0;font-size:clamp(44px,6vw,88px);line-height:.92}
+.work-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.pill{min-height:44px;padding:0 18px;border:1px solid var(--fg);background:transparent;display:flex;align-items:center;gap:8px}
+.pill small{font-size:11px;opacity:.75}
+.pill[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.pill:hover{opacity:.85}
+.work-body{margin-top:40px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
+.list{flex:999 1 560px;min-width:0;border-bottom:1px solid var(--line)}
+.list-head{display:flex;gap:16px;padding:0 16px 10px;font-size:11px;letter-spacing:.1em}
+.c-no{width:36px}.c-proj{flex:1 1 auto}.c-cat{width:110px}.c-yr{width:92px;text-align:right}
+.row{width:100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px;padding:18px 16px;border:0;border-top:1px solid var(--line);background:transparent;text-align:left;transition:background .18s ease,color .18s ease}
+.row:hover{background:rgba(128,128,128,.10)}
+.row[aria-expanded="true"]{background:var(--fg);color:var(--bg)}
+.row[aria-expanded="true"] .rm{color:var(--bg)}
+.row .no{width:36px;font-family:var(--mono);font-size:12px}
+.row .t{flex:1 1 240px;min-width:0}
+.row .t b{display:block;font-family:var(--sans);font-weight:700;font-size:clamp(20px,1.9vw,26px);line-height:1.15;letter-spacing:-.02em}
+.row .t span{display:block;margin-top:4px;font-size:14px}
+.row .cat{width:110px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.row .yr{width:92px;text-align:right;font-family:var(--mono);font-size:12px}
+.rm{color:var(--muted)}
+.detail{flex:1 1 380px;min-width:0;border:1px solid var(--fg);padding:20px}
+.frame{position:relative;aspect-ratio:4/3;background:var(--panel);border:1px solid var(--line);overflow:hidden}
+.frame svg{position:absolute;inset:0}
+.frame svg line{stroke:var(--line);stroke-width:1}
+.tag{position:absolute;left:14px;top:12px;padding:4px 8px;background:var(--accent);color:#0E0E0E;font-size:11px}
+.cap{position:absolute;left:14px;right:14px;bottom:12px;font-size:11px;letter-spacing:.06em}
+.detail h3{margin:6px 0 0;font-family:var(--sans);font-weight:700;font-size:32px;line-height:1.05;letter-spacing:-.03em}
+.detail p{margin:12px 0 0;font-size:15px;line-height:1.55}
+.detail dl{margin:20px 0 0;display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px 12px;font-size:14px}
+.detail dt{font-size:11px;padding-top:2px}
+.detail dd{margin:0}
+.nav2{margin-top:24px;display:flex;gap:8px}
+.nav2 button{flex:1 1 0;min-height:48px;border:1px solid var(--fg);background:transparent}
+.nav2 button.solid{background:var(--fg);color:var(--bg)}
+
+/* spotlight */
+.spot{background:var(--inv);color:var(--invfg)}
+.spot .wrap{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:clamp(56px,8vw,112px);padding-bottom:clamp(56px,8vw,112px)}
+.spot-text{flex:1 1 420px;min-width:0}
+.spot-text p{margin:24px 0 0;max-width:520px;font-size:18px;line-height:1.5;opacity:.85}
+.spot-grid{margin-top:32px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--invline);border:1px solid var(--invline);max-width:520px}
+.spot-grid div{background:var(--inv);padding:18px}
+.spot-grid small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.7}
+.spot-grid b{display:block;margin-top:6px;font-weight:600}
+.spot-art{flex:1 1 380px;min-width:0;position:relative;aspect-ratio:4/5;border:1px solid var(--invline)}
+.spot-art svg{position:absolute;inset:0}
+.spot-art svg line{stroke:var(--invline);stroke-width:1}
+.spot-art .obj{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:34%;aspect-ratio:1/2.2;background:var(--accent)}
+.spot-art .cap{opacity:.75}
+
+/* practice */
+.practice-h{margin:12px 0 0;max-width:980px;font-size:clamp(36px,4.6vw,68px);line-height:.98;letter-spacing:-.04em}
+.practice-body{margin-top:48px;display:flex;flex-wrap:wrap;gap:32px;align-items:stretch}
+.tabs{flex:1 1 360px;min-width:0;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.step{display:flex;align-items:center;gap:20px;min-height:64px;padding:0 16px;border:0;border-bottom:1px solid var(--line);background:transparent;text-align:left}
+.step:hover{opacity:.85}
+.step[aria-selected="true"]{background:var(--accent);color:#0E0E0E}
+.step span{font-family:var(--mono);font-size:12px}
+.step b{font-family:var(--sans);font-weight:700;font-size:22px;letter-spacing:-.02em}
+.panel{flex:1 1 420px;min-width:0;padding:32px;background:var(--panel);display:flex;flex-direction:column;justify-content:space-between;gap:32px}
+.panel .big{font-family:var(--sans);font-weight:700;font-size:120px;line-height:.8;letter-spacing:-.06em;color:var(--accent)}
+.panel h3{margin:24px 0 0;font-family:var(--sans);font-weight:700;font-size:32px;letter-spacing:-.03em}
+.panel p{margin:12px 0 0;max-width:520px;font-size:17px;line-height:1.55}
+.chips{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
+.chips span{padding:6px 12px;border:1px solid var(--fg);font-family:var(--mono);font-size:12px}
+
+/* career */
+.career{border-top:1px solid var(--line)}
+.career-body{display:flex;flex-wrap:wrap;gap:40px}
+.roles{flex:999 1 560px;min-width:0;border-top:1px solid var(--fg)}
+.role{border-bottom:1px solid var(--line)}
+.role button{width:100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 24px;padding:22px 0;border:0;background:transparent;text-align:left}
+.role .yrs{width:120px;font-family:var(--mono);font-size:13px}
+.role .who{flex:1 1 260px;min-width:0}
+.role .who b{display:block;font-family:var(--sans);font-weight:700;font-size:24px;letter-spacing:-.02em}
+.role .who span{display:block;font-size:15px;color:var(--muted)}
+.role .sign{font-family:var(--sans);font-size:28px;line-height:1;color:var(--accent)}
+.role .more{padding:0 0 24px 144px;max-width:760px;font-size:16px;line-height:1.55}
+@media (max-width:640px){.role .more{padding-left:0}}
+
+/* contact */
+.contact{background:var(--accent);color:#0E0E0E}
+.contact .wrap{padding-top:clamp(64px,9vw,140px);padding-bottom:40px}
+.contact h2{margin:16px 0 0;font-size:clamp(56px,10vw,168px);line-height:.86;letter-spacing:-.055em}
+.email{display:inline-block;margin-top:40px;font-family:var(--sans);font-weight:500;font-size:clamp(20px,3vw,40px);letter-spacing:-.02em;text-underline-offset:8px;text-decoration-thickness:2px;word-break:break-all}
+.clinks{margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));border-top:1.5px solid #0E0E0E}
+.clinks a{padding:20px 24px 20px 0;text-decoration:none;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(14,14,14,.35)}
+.clinks a b{font-weight:600}
+.foot{margin-top:64px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:11px}
+.foot a{text-decoration:none}
+</style>
+</head>
+<body>
+<div id="top"></div>
+
+<header class="top">
+  <nav class="bar wrap" aria-label="Main">
+    <a class="brand" href="#top"><span class="mark">MH</span><span class="mono">Mohammad Hossam El Dein</span></a>
+    <div class="links">
+      <a class="mono" href="#work">01 Work</a>
+      <a class="mono" href="#practice">02 Practice</a>
+      <a class="mono" href="#career">03 Career</a>
+      <a class="mono" href="#contact">04 Contact</a>
+      <button class="theme mono" id="theme" type="button" aria-label="Switch to dark mode"><i></i><span>Dark</span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero wrap">
+  <div class="hero-meta mono muted">
+    <span>[ Portfolio — 2026 ]</span>
+    <span>Art Director / Experiential &amp; Event Design</span>
+    <span>Egypt — GCC</span>
+  </div>
+  <div class="hwf-stage" id="hwf">
+    <canvas aria-hidden="true"></canvas>
+    <h1 class="sr-only">Mohammad Hossam El Dein</h1>
+    <span class="hwf-hint mono muted" aria-hidden="true">Move — click</span>
+  </div>
+  <div class="hero-row">
+    <p class="lede">Architect-trained art director turning briefs into exhibition booths, national events and branded environments — from the first mood board to opening night.</p>
+    <p class="arabic" lang="ar" dir="rtl">محمد حسام الدين</p>
+  </div>
+  <div class="ctas">
+    <a class="btn solid" href="#work">View the work
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+    <a class="btn" href="#contact">Start a project</a>
+  </div>
+  <div class="dim" aria-hidden="true"><span class="tickv"></span><span class="rule"></span><span>2016 ——— 9+ YEARS ——— 2026</span><span class="rule"></span><span class="tickv"></span></div>
+</section>
+
+<section class="facts" aria-label="At a glance">
+  <div class="wrap">
+    <div class="fact"><b>9+</b><span class="mono muted">Years in exhibitions &amp; events</span></div>
+    <div class="fact"><b>EG+KSA</b><span class="mono muted">Markets delivered</span></div>
+    <div class="fact"><b id="total">16</b><span class="mono muted">Selected projects indexed</span></div>
+    <div class="fact"><b>B.Arch</b><span class="mono muted">Architectural engineering</span></div>
+  </div>
+</section>
+
+<div class="ticker" aria-label="Selected clients"><div class="tick" id="tick"></div></div>
+
+<section class="section wrap" id="work">
+  <div class="work-head">
+    <div>
+      <div class="mono muted">01 — Index of work</div>
+      <h2 class="h2 display">Selected work</h2>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter by discipline"></div>
+  </div>
+  <div class="work-body">
+    <div class="list">
+      <div class="list-head mono muted" aria-hidden="true"><span class="c-no">No.</span><span class="c-proj">Project</span><span class="c-cat">Discipline</span><span class="c-yr">Year</span></div>
+      <div id="rows"></div>
+    </div>
+    <aside class="detail" aria-live="polite">
+      <div class="frame">
+        <svg width="100%" height="100%" viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="0" x2="400" y2="300"/><line x1="400" y1="0" x2="0" y2="300"/></svg>
+        <span class="tag mono" id="d-cat"></span>
+        <span class="cap mono muted" id="d-cap"></span>
+      </div>
+      <div class="mono muted" style="margin-top:20px" id="d-pos"></div>
+      <h3 id="d-title"></h3>
+      <p id="d-note"></p>
+      <dl>
+        <dt class="mono muted">Context</dt><dd id="d-context"></dd>
+        <dt class="mono muted">Role</dt><dd id="d-role"></dd>
+        <dt class="mono muted">Studio</dt><dd id="d-studio"></dd>
+        <dt class="mono muted">Year</dt><dd id="d-year"></dd>
+      </dl>
+      <div class="nav2">
+        <button type="button" class="mono" id="prev" aria-label="Previous project">← Prev</button>
+        <button type="button" class="mono solid" id="next" aria-label="Next project">Next →</button>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="spot" aria-label="Spotlight: Cairo Drama Festival">
+  <div class="wrap">
+    <div class="spot-text">
+      <div class="mono" style="color:var(--accent)">Spotlight — Identity &amp; object</div>
+      <h2 class="h2 display" style="margin-top:16px;font-size:clamp(44px,6vw,92px);line-height:.9">Cairo Drama Festival</h2>
+      <p>Beyond space: he created the festival’s visual identity concept and designed the festival trophy, developing it with sculptors and 3D animators.</p>
+      <div class="spot-grid">
+        <div><small>Deliverable</small><b>Visual identity</b></div>
+        <div><small>Deliverable</small><b>Festival trophy</b></div>
+        <div><small>Studio</small><b>POD Egypt</b></div>
+        <div><small>Collaborators</small><b>Sculptors, 3D animators</b></div>
+      </div>
+    </div>
+    <div class="spot-art">
+      <svg width="100%" height="100%" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="0" x2="400" y2="500"/><line x1="400" y1="0" x2="0" y2="500"/></svg>
+      <span class="obj" aria-hidden="true"></span>
+      <span class="cap mono">[ Trophy render / photo ]</span>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="practice">
+  <div class="mono muted">02 — Practice</div>
+  <h2 class="practice-h display">From brief to build, one hand on the concept and one on the drawings.</h2>
+  <div class="practice-body">
+    <div class="tabs" id="tabs" role="tablist" aria-label="Process stages"></div>
+    <div class="panel" role="tabpanel" id="panel">
+      <div>
+        <div class="big" id="p-n"></div>
+        <h3 id="p-title"></h3>
+        <p id="p-body"></p>
+      </div>
+      <div>
+        <div class="mono muted" style="font-size:11px;letter-spacing:.1em">Tools at this stage</div>
+        <div class="chips" id="p-tools"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="career" id="career">
+  <div class="section wrap">
+    <div class="career-body">
+      <div style="flex:1 1 300px">
+        <div class="mono muted">03 — Career</div>
+        <h2 class="h2 display">Track<br>record</h2>
+      </div>
+      <div class="roles" id="roles"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="mono">04 — Contact</div>
+    <h2 class="display">Let’s build<br>the next one.</h2>
+    <a class="email" href="mailto:mohammadhossameldein@gmail.com">mohammadhossameldein@gmail.com</a>
+    <div class="clinks">
+      <a href="tel:+201060087400"><span class="mono">Phone</span><b>+20 106 008 7400</b></a>
+      <a href="https://linkedin.com/in/mohammad-hossam-el-dein-683053a3" target="_blank" rel="noopener"><span class="mono">LinkedIn</span><b>↗</b></a>
+      <a href="https://behance.net/Mohammadho4661" target="_blank" rel="noopener"><span class="mono">Behance</span><b>↗</b></a>
+    </div>
+    <div class="foot mono">
+      <span>© 2026 Mohammad Hossam El Dein</span>
+      <span>Exhibitions · Events · Experiential</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+
+  /* ---------- theme ---------- */
+  var stored = null;
+  try { stored = localStorage.getItem('mhe-theme'); } catch (e) {}
+  if (stored === 'dark') root.setAttribute('data-theme', 'dark');
+  function setThemeLabel() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    $('theme').querySelector('span').textContent = dark ? 'Light' : 'Dark';
+    $('theme').setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+  setThemeLabel();
+  $('theme').addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') !== 'dark';
+    if (dark) root.setAttribute('data-theme', 'dark'); else root.removeAttribute('data-theme');
+    try { localStorage.setItem('mhe-theme', dark ? 'dark' : 'light'); } catch (e) {}
+    setThemeLabel();
+    if (window.__hwf) window.__hwf.wake();
+  });
+
+  /* ---------- data ---------- */
+  var CATS = { booth: 'Booths', event: 'Events', identity: 'Identity', set: 'Sets' };
+  var P = [
+    { id: 'makkah', title: 'Makkah Municipality Booth', context: 'Cityscape Global 2025', cat: 'booth', year: '2025', studio: '37 Events', role: '3D Art Director', note: 'Exhibition booth for Makkah Municipality at Cityscape Global, led with the 3D design team from spatial concept through visualisation and on-site delivery.' },
+    { id: 'kidana', title: 'Kidana Booth', context: 'Hajj Conference & Exhibition', cat: 'booth', year: '2025–26', studio: '37 Events', role: '3D Art Director', note: 'Booth environment for Kidana at the Hajj Conference & Exhibition, directing spatial development and visualisation quality for a major Saudi client.' },
+    { id: 'ruaa', title: 'Ruaa Al Haram', context: 'Ramadan & Founding Day event', cat: 'event', year: 'Ongoing', studio: '37 Events', role: '3D Art Director', note: 'Ongoing creative direction for Ruaa Al Haram’s Ramadan and Founding Day event environments.' },
+    { id: 'rega', title: 'Real Estate General Authority', context: 'Competitive pitch — won', cat: 'booth', year: '2023–', studio: 'Topex Execution (freelance)', role: '3D Designer', note: '3D design and visualisation that contributed to a winning pitch for a Saudi government exhibition client.' },
+    { id: 'riyadhair', title: 'Riyadh Air', context: 'Competitive pitch — won', cat: 'booth', year: '2023–', studio: 'Topex Execution (freelance)', role: '3D Designer', note: 'Visualisation work contributing to a winning event and exhibition pitch for Riyadh Air.' },
+    { id: 'cst', title: 'CST Commission', context: 'Competitive pitch — won', cat: 'booth', year: '2023–', studio: 'Topex Execution (freelance)', role: '3D Designer', note: '3D design solutions supporting a winning pitch for the Communications, Space & Technology Commission.' },
+    { id: 'humanrights', title: 'National Human Rights Strategy Launch', context: 'National launch event, Egypt', cat: 'event', year: '2021', studio: 'POD Egypt', role: 'Head of Design / Events AD', note: 'Creative direction for a national governmental launch event, leading design and production teams.' },
+    { id: 'climate', title: 'Climate & Environment Investment Forum', context: 'Governmental forum, Egypt', cat: 'event', year: '2023', studio: 'POD Egypt', role: 'Head of Design / Events AD', note: 'Large-scale forum environment: concept, technical drawings, material specification and execution standards.' },
+    { id: 'summit', title: 'Egypt Economic Summit', context: 'Summit staging, two editions', cat: 'event', year: '2021, 2022', studio: 'POD Egypt', role: 'Head of Design / Events AD', note: 'Staging and event environments for two editions of the Egypt Economic Summit.' },
+    { id: 'bt100', title: 'BT 100 Awards', context: 'Awards ceremony, two editions', cat: 'event', year: '2021, 2022', studio: 'POD Egypt', role: 'Head of Design / Events AD', note: 'Ceremony staging and visual direction for two editions of the BT 100 Awards.' },
+    { id: 'alamain', title: 'Al Alamain Festival', context: 'Entertainment festival', cat: 'event', year: '2023–24', studio: 'POD Egypt', role: 'Head of Design / Events AD', note: 'Festival environments across the 2023 and 2024 seasons.' },
+    { id: 'drama', title: 'Cairo Drama Festival', context: 'Visual identity & festival trophy', cat: 'identity', year: '2021–25', studio: 'POD Egypt', role: 'Identity concept & trophy design', note: 'Created the visual identity concept and designed the festival trophy, developed with sculptors and 3D animators.' },
+    { id: 'tvsets', title: 'GLC Paints · Vodafone · Heinz', context: 'TV commercial sets', cat: 'set', year: '2020–21', studio: 'Freelance', role: 'Set Designer / Art Director', note: 'Conceptualised, designed and built sets for TV commercials including GLC Paints 2021, Vodafone “Sha7net Henedi” and Heinz “Molook El Akl”.' },
+    { id: 'mas', title: 'Microsoft · Sodic · Hyde Park · Sorouh', context: 'Exhibition booths & branded environments', cat: 'booth', year: '2019–20', studio: 'MAS Advertising', role: 'Senior Exhibition Designer', note: 'Concept design, 3D models and execution supervision for booths and branded environments.' },
+    { id: 'waterway', title: 'Waterway Christmas', context: 'Seasonal decorations', cat: 'set', year: '2019–20', studio: 'MAS Advertising', role: 'Senior Exhibition Designer', note: 'Seasonal Christmas decoration scheme for Waterway.' },
+    { id: 'pitches', title: 'Tatweer Misr · British Council · Gloria', context: '5+ competitive pitches won', cat: 'booth', year: '2016–19', studio: 'Mental Flame', role: 'Exhibition Designer', note: 'Exhibition concepts and visualisations behind 5+ pitch wins, including Tatweer Misr, British Council, Dorra Developments, Al Ahly Sabbour and Gloria Ceramics; also BMW events and Cairo Design Award.' }
+  ];
+  P.forEach(function (p, i) { p.n = (i < 9 ? '0' : '') + (i + 1); p.catLabel = CATS[p.cat]; });
+  $('total').textContent = P.length;
+
+  var STEPS = [
+    { title: 'Concept & mood', body: 'Every project starts by translating the client brief into a clear story and visual direction: mood boards, references and a spatial idea that the whole team can rally around.', tools: ['Photoshop', 'Illustrator'] },
+    { title: 'Spatial design', body: 'An architect’s reading of space: layout, visitor flow, brand integration and the moments people will remember and photograph.', tools: ['AutoCAD', 'SketchUp'] },
+    { title: 'Visualisation', body: 'High-end 3D renders that sell the idea and win pitches, built to read as close to the finished build as possible.', tools: ['3ds Max', 'Corona', 'V-Ray'] },
+    { title: 'Technical & materials', body: 'Technical drawing supervision, material and lighting specification, and budget control so the render is buildable.', tools: ['AutoCAD', 'Specs & BOQ'] },
+    { title: 'On-site execution', body: 'Coordinating production, graphics and technical teams through to install, keeping premium standards on the ground.', tools: ['Vendor management', 'Logistics'] }
+  ];
+  var ROLES = [
+    { years: '2025 — Now', role: '3D Art Director', org: '37 Events · Saudi market', detail: 'Leads the 3D design team on high-end exhibition booths and event environments for major Saudi clients, from proposal to on-site execution.' },
+    { years: '2023 — Now', role: 'Freelance 3D Designer', org: 'Topex Execution', detail: '3D design and visualisation for Saudi exhibition and event clients; contributed to winning pitches including REGA, CST Commission and Riyadh Air.' },
+    { years: '2021 — 2025', role: 'Head of Design / Events Art Director', org: 'POD Egypt', detail: 'Creative direction for large governmental, national and entertainment events; supervised budgets, technical drawings, material specs and execution standards.' },
+    { years: '2020 — 2021', role: 'Set Designer / Art Director', org: 'Freelance', detail: 'Designed and built TV commercial sets for GLC Paints, Vodafone and Heinz.' },
+    { years: '2019 — 2020', role: 'Senior Exhibition Designer / Architect', org: 'MAS Advertising', detail: 'Concepts, 3D models and execution supervision for Microsoft, Sodic, Hyde Park, Sorouh and Waterway.' },
+    { years: '2016 — 2019', role: 'Junior Exhibition Designer / Architect', org: 'Mental Flame Architecture & Interiors', detail: 'Exhibition concepts and visualisations; won 5+ competitive pitches and worked on BMW events and Cairo Design Award.' },
+    { years: '2014', role: 'B.Sc. Architectural Engineering', org: 'Al Sorouk Academy', detail: 'The architectural foundation behind every booth, stage and environment since.' }
+  ];
+  var TICK = ['Makkah Municipality', 'Kidana', 'Riyadh Air', 'CST Commission', 'Microsoft', 'British Council', 'BMW', 'Vodafone', 'Sodic', 'Tatweer Misr', 'Egypt Economic Summit', 'Al Alamain Festival'];
+
+  /* ---------- ticker ---------- */
+  $('tick').innerHTML = TICK.concat(TICK).map(function (t, i) {
+    return '<span' + (i >= TICK.length ? ' aria-hidden="true"' : '') + '>' + esc(t) + '</span>';
+  }).join('');
+
+  /* ---------- work index ---------- */
+  var state = { filter: 'all', sel: 'makkah', step: 0, role: 0 };
+  function visible() { return P.filter(function (p) { return state.filter === 'all' || p.cat === state.filter; }); }
+
+  function renderFilters() {
+    var defs = [['all', 'All'], ['booth', 'Booths'], ['event', 'Events'], ['identity', 'Identity'], ['set', 'Sets']];
+    $('filters').innerHTML = defs.map(function (d) {
+      var n = d[0] === 'all' ? P.length : P.filter(function (p) { return p.cat === d[0]; }).length;
+      return '<button type="button" class="pill mono" data-f="' + d[0] + '" aria-pressed="' + (state.filter === d[0]) + '">' + d[1] + '<small>' + n + '</small></button>';
+    }).join('');
+  }
+  function renderWork() {
+    var list = visible();
+    var sel = list.filter(function (p) { return p.id === state.sel; })[0] || list[0];
+    state.sel = sel.id;
+    $('rows').innerHTML = list.map(function (p) {
+      return '<button type="button" class="row" data-id="' + p.id + '" aria-expanded="' + (p.id === sel.id) + '">' +
+        '<span class="no rm">' + p.n + '</span>' +
+        '<span class="t"><b>' + esc(p.title) + '</b><span class="rm">' + esc(p.context) + '</span></span>' +
+        '<span class="cat">' + p.catLabel + '</span><span class="yr">' + esc(p.year) + '</span></button>';
+    }).join('');
+    $('d-cat').textContent = sel.catLabel;
+    $('d-cap').textContent = '[ Render / photo — ' + sel.title + ' ]';
+    $('d-pos').textContent = sel.n + ' / ' + list.length;
+    $('d-title').textContent = sel.title;
+    $('d-note').textContent = sel.note;
+    $('d-context').textContent = sel.context;
+    $('d-role').textContent = sel.role;
+    $('d-studio').textContent = sel.studio;
+    $('d-year').textContent = sel.year;
+  }
+  $('filters').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-f]'); if (!b) return;
+    state.filter = b.getAttribute('data-f'); state.sel = null;
+    renderFilters(); renderWork();
+  });
+  $('rows').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-id]'); if (!b) return;
+    state.sel = b.getAttribute('data-id'); renderWork();
+    var f = $('rows').querySelector('[data-id="' + state.sel + '"]'); if (f) f.focus();
+  });
+  function stepSel(dir) {
+    var list = visible();
+    var i = list.map(function (p) { return p.id; }).indexOf(state.sel);
+    state.sel = list[(i + dir + list.length) % list.length].id; renderWork();
+  }
+  $('prev').addEventListener('click', function () { stepSel(-1); });
+  $('next').addEventListener('click', function () { stepSel(1); });
+
+  /* ---------- practice tabs ---------- */
+  function renderSteps() {
+    $('tabs').innerHTML = STEPS.map(function (s, i) {
+      return '<button type="button" class="step" role="tab" data-s="' + i + '" aria-selected="' + (i === state.step) + '" tabindex="' + (i === state.step ? 0 : -1) + '"><span>0' + (i + 1) + '</span><b>' + esc(s.title) + '</b></button>';
+    }).join('');
+    var s = STEPS[state.step];
+    $('p-n').textContent = '0' + (state.step + 1);
+    $('p-title').textContent = s.title;
+    $('p-body').textContent = s.body;
+    $('p-tools').innerHTML = s.tools.map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('');
+  }
+  $('tabs').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-s]'); if (!b) return;
+    state.step = +b.getAttribute('data-s'); renderSteps();
+    $('tabs').querySelector('[data-s="' + state.step + '"]').focus();
+  });
+  $('tabs').addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp' && e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    e.preventDefault();
+    var d = (e.key === 'ArrowDown' || e.key === 'ArrowRight') ? 1 : -1;
+    state.step = (state.step + d + STEPS.length) % STEPS.length; renderSteps();
+    $('tabs').querySelector('[data-s="' + state.step + '"]').focus();
+  });
+
+  /* ---------- career ---------- */
+  function renderRoles() {
+    $('roles').innerHTML = ROLES.map(function (r, i) {
+      var open = i === state.role;
+      return '<div class="role"><button type="button" data-r="' + i + '" aria-expanded="' + open + '">' +
+        '<span class="yrs">' + esc(r.years) + '</span>' +
+        '<span class="who"><b>' + esc(r.role) + '</b><span>' + esc(r.org) + '</span></span>' +
+        '<span class="sign" aria-hidden="true">' + (open ? '−' : '+') + '</span></button>' +
+        (open ? '<div class="more">' + esc(r.detail) + '</div>' : '') + '</div>';
+    }).join('');
+  }
+  $('roles').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-r]'); if (!b) return;
+    var i = +b.getAttribute('data-r');
+    state.role = state.role === i ? -1 : i; renderRoles();
+    $('roles').querySelector('[data-r="' + i + '"]').focus();
+  });
+
+  renderFilters(); renderWork(); renderSteps(); renderRoles();
+
+  /* ---------- halftone wordmark ----------
+     The name set huge, cropped by the bottom edge, printed as dots sized by
+     letter coverage. Dots part around the pointer on springs and warm toward
+     the accent; a click sends a shock ring through the word. */
+  (function halftone() {
+    var host = $('hwf');
+    var canvas = host.querySelector('canvas');
+    var ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var LINES = ['mohammad', 'hossam', 'el dein'];
+    var FONT = '"Space Grotesk", "Inter", "Helvetica Neue", Arial, sans-serif';
+    var GAP = 6, RADIUS = 90;
+    var w = 0, h = 0, dpr = 1, px = -1e5, py = -1e5, raf = 0, awake = true, isVisible = true;
+    var ring = { x: 0, y: 0, t: -1 };
+    var dots = new Float32Array(0), count = 0, grainTile = null;
+    var colKey = '', bg = '#F2F0EB', inkHex = '#0E0E0E', ink = [14, 14, 14], warm = [255, 79, 0];
+
+    function hex(s) {
+      var m = /^#?([0-9a-f]{3}|[0-9a-f]{6})$/i.exec((s || '').trim());
+      if (!m) return null;
+      var x = m[1].length === 3 ? m[1].split('').map(function (c) { return c + c; }).join('') : m[1];
+      return [parseInt(x.slice(0, 2), 16), parseInt(x.slice(2, 4), 16), parseInt(x.slice(4, 6), 16)];
+    }
+    function syncColors() {
+      var cs = getComputedStyle(root);
+      var b = cs.getPropertyValue('--bg').trim(), f = cs.getPropertyValue('--fg').trim(), a = cs.getPropertyValue('--accent').trim();
+      var k = b + f + a;
+      if (k === colKey) return;
+      colKey = k; bg = b; inkHex = f;
+      ink = hex(f) || ink; warm = hex(a) || warm;
+    }
+
+    function layout() {
+      var rect = host.getBoundingClientRect();
+      w = Math.max(1, Math.round(rect.width));
+      h = Math.max(1, Math.round(rect.height));
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+      var mask = document.createElement('canvas');
+      mask.width = w; mask.height = h;
+      var m = mask.getContext('2d', { willReadFrequently: true });
+      if (!m) return;
+      m.font = '700 100px ' + FONT;
+      var widest = 0;
+      LINES.forEach(function (l) { widest = Math.max(widest, m.measureText(l).width); });
+      var fit = widest > 0 ? (w * 0.995 / widest) * 100 : 100;
+      var crop = 0.18, lead = 0.86;
+      var need = fit * 0.74 + (LINES.length - 1) * fit * lead - fit * 0.74 * crop;
+      if (need > h * 0.96) fit = fit * (h * 0.96) / need;
+      m.font = '700 ' + fit + 'px ' + FONT;
+      m.fillStyle = '#000';
+      m.textBaseline = 'alphabetic';
+      var cap = m.measureText('h').actualBoundingBoxAscent || fit * 0.72;
+      var base = h + cap * crop;
+      for (var i = LINES.length - 1; i >= 0; i--) { m.fillText(LINES[i], -fit * 0.02, base); base -= fit * lead; }
+      var img = m.getImageData(0, 0, w, h).data;
+      var gap = Math.max(3, GAP - (w < 560 ? 2 : 0));
+      var cols = Math.ceil(w / gap), rows = Math.ceil(h / gap), tmp = [];
+      for (var gy = 0; gy < rows; gy++) {
+        for (var gx = 0; gx < cols; gx++) {
+          var sum = 0;
+          for (var sy = 0; sy < 3; sy++) for (var sx = 0; sx < 3; sx++) {
+            var x = Math.min(w - 1, Math.floor(gx * gap + ((sx + 0.5) * gap) / 3));
+            var y = Math.min(h - 1, Math.floor(gy * gap + ((sy + 0.5) * gap) / 3));
+            sum += img[(y * w + x) * 4 + 3];
+          }
+          var cov = sum / (9 * 255);
+          if (cov < 0.06) continue;
+          var hx = gx * gap + gap / 2, hy = gy * gap + gap / 2;
+          tmp.push(hx, hy, 0, 0, hx, hy, Math.sqrt(Math.min(1, cov)) * gap * 0.56);
+        }
+      }
+      dots = new Float32Array(tmp);
+      count = tmp.length / 7;
+      if (!grainTile) {
+        grainTile = document.createElement('canvas');
+        grainTile.width = 256; grainTile.height = 256;
+        var g = grainTile.getContext('2d');
+        if (g) {
+          var id = g.createImageData(256, 256);
+          for (var p = 0; p < id.data.length; p += 4) {
+            var v = Math.random() * 255;
+            id.data[p] = id.data[p + 1] = id.data[p + 2] = v;
+            id.data[p + 3] = Math.random() < 0.5 ? 0 : 255;
+          }
+          g.putImageData(id, 0, 0);
+        }
+      }
+      awake = true;
+    }
+
+    function draw(now) {
+      syncColors();
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, w, h);
+      var r = reduced ? 0 : RADIUS;
+      var ringAge = ring.t < 0 ? 1e9 : now - ring.t;
+      var ringR = ringAge * 0.9;
+      var moving = false;
+      for (var i = 0; i < count; i++) {
+        var j = i * 7;
+        var x = dots[j], y = dots[j + 1], vx = dots[j + 2], vy = dots[j + 3], hx = dots[j + 4], hy = dots[j + 5];
+        if (!reduced) {
+          if (ringAge < 900) {
+            var rdx = hx - ring.x, rdy = hy - ring.y, rd = Math.sqrt(rdx * rdx + rdy * rdy) + 0.001;
+            var band = 1 - Math.min(1, Math.abs(rd - ringR) / 26);
+            if (band > 0) { var rf = band * 3.2 * (1 - ringAge / 900); vx += (rdx / rd) * rf; vy += (rdy / rd) * rf; }
+          }
+          var dx = x - px, dy = y - py, d2 = dx * dx + dy * dy;
+          if (r > 0 && d2 < r * r) { var d = Math.sqrt(d2) + 0.001, f = (1 - d / r) * 2.6; vx += (dx / d) * f; vy += (dy / d) * f; }
+          vx = (vx + (hx - x) * 0.05) * 0.84;
+          vy = (vy + (hy - y) * 0.05) * 0.84;
+          x += vx; y += vy;
+          if (Math.abs(vx) + Math.abs(vy) > 0.02 || Math.abs(x - hx) + Math.abs(y - hy) > 0.05) moving = true;
+          else { x = hx; y = hy; vx = 0; vy = 0; }
+          dots[j] = x; dots[j + 1] = y; dots[j + 2] = vx; dots[j + 3] = vy;
+        }
+        var k = Math.min(1, Math.hypot(x - hx, y - hy) / 28);
+        ctx.fillStyle = k > 0.02
+          ? 'rgb(' + Math.round(ink[0] + (warm[0] - ink[0]) * k) + ',' + Math.round(ink[1] + (warm[1] - ink[1]) * k) + ',' + Math.round(ink[2] + (warm[2] - ink[2]) * k) + ')'
+          : inkHex;
+        ctx.beginPath();
+        ctx.arc(x, y, dots[j + 6], 0, 6.2832);
+        ctx.fill();
+      }
+      if (grainTile) {
+        ctx.globalAlpha = 0.045;
+        ctx.globalCompositeOperation = 'overlay';
+        var pat = ctx.createPattern(grainTile, 'repeat');
+        if (pat) { ctx.fillStyle = pat; ctx.fillRect(0, 0, w, h); }
+        ctx.globalAlpha = 1;
+        ctx.globalCompositeOperation = 'source-over';
+      }
+      awake = moving || ringAge < 900 || px > -1e4;
+    }
+
+    function loop(now) { raf = 0; if (!isVisible) return; draw(now); if (awake) raf = requestAnimationFrame(loop); }
+    function wake() { awake = true; if (!raf && isVisible) raf = requestAnimationFrame(loop); }
+    function local(e) { var b = canvas.getBoundingClientRect(); return [e.clientX - b.left, e.clientY - b.top]; }
+
+    host.addEventListener('pointermove', function (e) { var p = local(e); px = p[0]; py = p[1]; wake(); });
+    host.addEventListener('pointerleave', function () { px = -1e5; py = -1e5; wake(); });
+    host.addEventListener('pointerdown', function (e) { if (reduced) return; var p = local(e); ring = { x: p[0], y: p[1], t: performance.now() }; wake(); });
+
+    layout(); draw(performance.now()); wake();
+    if ('ResizeObserver' in window) new ResizeObserver(function () { layout(); wake(); }).observe(host);
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (en) { isVisible = en[0] ? en[0].isIntersecting : true; if (isVisible) wake(); }).observe(host);
+    if (document.fonts && document.fonts.load) document.fonts.load('700 100px "Space Grotesk"').then(function () { layout(); wake(); }, function () {});
+    window.__hwf = { wake: wake };
+  })();
+})();
+</script>
+</body>
+</html>
